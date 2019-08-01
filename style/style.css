@@ -1,0 +1,458 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Background Color - image 
+* these are replacement
+    background-color: #87CEEB;
+    background-image: url('background-img.png');
+    background-repeat: no-repeat;
+    background-size: 1000px 100%;
+*/
+
+    /*Changed here*/
+html, body{
+    height: 100%;
+}
+
+
+body{
+    background-image: url('/images/backgrounds/back3.png');
+    /*Changed here*/
+    display: flex;
+    flex-direction: column;
+
+    
+    
+}
+
+/*Main content */
+#main-box{
+    max-width: 960px;
+    margin: 0 auto;
+    flex: 1 0 auto;
+    
+}
+
+/*Nav bar */
+nav{
+    max-width: 290px; 
+    margin: 0 auto;
+    padding: 20px;
+    background-color:black;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px; 
+}
+
+a{
+    text-decoration: none;
+    padding-right: 20px;
+    color: #ffffff;
+
+}
+
+a:hover{
+    color: 	#008000;
+}
+
+/*logo-top-left*/
+
+
+/*Title - Header*/
+
+.main-title{
+    text-align: center;
+    /*padding: 50px 0;*/
+    padding: 30px 0;
+    font-family: "Kranky", cursive, sans-serif;
+    font-size: 50px;
+}
+
+
+h1{
+    /*delete max-width and margin for other option*/
+    /*padding: 0 140px;*/
+    color: white;
+    background-color: black;
+    /*border: 1px solid black;*/
+    border-radius: 25px;
+    /*background-size: 150% 200%;*/
+   
+}
+
+/*SlideShow functionality
+
+ max-width: 550px;
+ margin: 0 auto;
+ background-color: #87CEEB;
+*/
+.main-cats{
+    max-width: 550px;
+    margin: 0 auto; 
+    padding: 0;
+    padding-bottom: 50px;
+    
+    border: 0;
+    border-radius: 0;
+     
+}
+
+/*
+    width: 550px;
+    height: 350px;
+    border: 3px solid #ffffff;
+*/
+
+img {
+    
+    width: 550px;
+    height: 350px;
+    border: 3px solid #ffffff;
+    border-radius: 0;
+}
+
+
+/*Content - title  */
+/*
+h3{
+    font-size: 25px;
+    
+}*/
+
+.content-title{
+    text-align: center;
+    padding-bottom: 15px;
+    
+}
+
+/*Content - box  */
+.content-main-box{
+    max-width: 800px;
+    margin: 0 auto;
+    
+}
+
+.content-box{
+    float: right;
+    max-width: 480px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 60px 0;
+    background-color: whitesmoke;
+    /*border: 3px solid black;*/
+    border-radius: 25px;
+    
+}
+
+
+.content-side-box{
+    max-width: 300px;
+    padding: 60px 15px;
+    margin: 30px 15px;
+    /*margin: 30px 0;*/
+    float: left;
+    background-color: whitesmoke;
+    /*border: 3px solid black;*/
+    border-radius: 25px;
+}
+
+
+/*content - paragraph*/
+.content-pg{
+    padding: 0 60px;
+}
+
+p{
+    font-size: 16px;
+    font-family: "Arial", sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.8;
+}
+
+
+/*Footer*/
+.main-footer{
+    background-color: #000000;
+    padding: 25px 0;
+    text-align: center;
+    color: white;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+
+/*
+background-color: red;
+position: relative;
+height: 100px;
+margin-top: -100px;
+clear: both;
+*/
+
+/*fixed footer
+    background-color: black;
+    color: white;
+    /*position: fixed // fiexed to bottom 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 25px 0;
+    text-align: center;
+
+    */
+
+/************** Math game page *****************/
+
+/*Choose box + input box*/
+.choose-box{
+    margin-top: 10px;
+    font-size: 25px;
+    text-align: center;
+}
+
+#drop{
+    padding: 10px 20px;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    width: 5%;
+}
+
+#drop:focus{
+    border: 3px solid #555;
+}
+
+#bnt{
+    font-size: 15x;
+    padding: 8px 15px;
+    background-color: #ffffff;
+    border: 2px solid #008CBA;
+    color: #000000;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+#bnt:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+#validate{
+    color: #FF0000;
+}
+
+/*time-box + progress bar*/
+
+#time-box{
+    max-width: 500px;
+
+}
+
+#time{
+    max-width: 70px;
+    padding: 10px 0; 
+    margin: 0 auto;
+    color: #000000;
+
+}
+
+#load{
+    font-size: 25px;
+    max-width: 150px;
+    padding: 10px 0;
+    margin: 0 auto;
+    color: darkred;
+}
+
+#myProgress {
+    width: 100%;
+    background-color: #ddd;
+    margin-top: 25px;
+}
+
+#myBar {
+    width: 0%;
+    height: 30px;
+    background-color: #4CAF50;
+}
+
+/*Question box*/
+#main-question-box{
+    max-width: 150px;
+    margin: 60px auto;
+    padding: 60px 150px;
+    /*border: 3px solid black;*/
+    background-color: whitesmoke;
+    border: 10px solid black;
+    border-radius: 20px;
+}
+
+#test2{
+    font-size: 45px;
+    padding-left: 60px;
+     /*take this off*/
+}
+
+#content{
+    padding-top: 40px;
+}
+
+#quiz2{
+    padding: 10px 18px;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    width: 70%;
+
+}
+
+#quiz2:focus{
+    border: 3px solid #555;
+}
+
+#score2{
+    font-size: 20px;
+    padding: 5px 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 3px solid #008CBA;
+    background-color: #ffffff;
+}
+
+#score2:hover{
+    background-color: #008CBA;
+    color: white;
+}
+
+#result{
+    padding: 30px 0;
+    font-size: 50px;
+    text-align: center;
+}
+
+/******************Resource page************* */
+
+.content-resource-box{
+    
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 60px 60px;
+    /*background-color: #ffffff;*/
+    background-color: whitesmoke;
+    border: 10px solid black;
+    border-radius: 25px;
+}
+
+.resource-links{
+    color: blue;
+}
+
+ul{
+    font-family: "Arial", Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+/********** Media Quires ***********/
+
+/*Index.html*/
+
+@media only screen and (max-width: 777px){
+    .content-box {
+        float: none;
+        max-width: 480px;
+        margin: 30px auto;
+        padding: 60px 0;
+        /*background-color: #ffffff;*/
+        /*border: 3px solid black;*/
+        /*border-radius: 25px;*/
+    }
+
+    .content-side-box {
+        max-width: 300px;
+        padding: 60px 15px;
+        margin: 30px auto;
+        float: none;
+        /*background-color: #ffffff;*/
+        /*border: 3px solid black;*/
+        /*border-radius: 25px;*/
+    }
+
+    /*Footer fix here*/
+        
+}
+
+@media only screen and (max-width: 425px){
+    /*    h1{
+        padding: 0 50px
+    }*/
+    
+
+    img{
+        width: 100%;
+        height: 350px;
+        border: none;
+        border-radius: 0;
+    }
+    /*Footer here*/
+
+    #main-question-box{
+        padding: 60px 100px;
+    }
+
+    .content-pg{
+        padding: 0 6px;
+    }
+
+    .content-resource-box{
+        /*padding: 60px 0;*/
+        padding: 60px 20px;
+        
+    }
+}
+
+@media only screen and (max-width: 375px){
+    #main-question-box{
+        padding: 60px 70px;
+    }
+
+}
+
+@media only screen and (max-width: 320px){
+    h1 {
+        max-width: 700px;
+        margin: 0 auto;
+        border-radius: 0;
+        border: none;
+        
+    }
+    .main-title{
+        font-size: 40px;
+    }
+
+    .content-resource-box{
+        /*padding: 60px 0;*/
+        padding: 60px 0px;
+        
+    }
+
+    ul{
+        list-style-type: none;
+    }
+
+    /*Footer here*/
+}
+
+
+
+.test{
+background-color: white;
+overflow: hidden;
+border: 10px solid black;
+margin-bottom: 30px;
+padding: 20px;
+}

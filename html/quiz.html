@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aztec-Quiz</title>
+    <link rel = 'stylesheet' type = 'text/css' href="/style/style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Kranky' rel='stylesheet'>
+
+</head>
+<body>
+
+    <section class = 'main-box' id = 'main-box'>
+
+        <nav>
+            <a href = "/index.html">Home</a>
+            <a href = "#quiz">Quiz</a>
+            <a href = "/html/resources.html">Resources</a>
+            <a href = "/html/contact.html">Contact</a>
+    
+        </nav>
+
+        <header class = 'main-title' id = 'main-title'>
+            <h1>Quiz</h1>
+        </header>
+
+        
+        <article class = 'choose-box'>
+            <label>Pick a number between 2-12 </label><input type = 'text' id = 'drop' /> <button id = 'bnt'>Start</button>
+            <br/>
+            <span id = 'validate' style="display: none"> *Please pick a number between 2-10 </span>
+        </article>
+
+
+        
+        <Article class = 'time-box'>
+                <h2 id = 'time'></h2>
+
+                <div id="myProgress" style="display:none;">
+                    <div id="myBar"></div>       
+                </div>
+
+                <span id = 'load' style = "display: none;">Get Ready!</span>
+        </Article>
+
+        <span id = 'result' style="display:none;"></span>
+        <article id = 'main-question-box' style="display:none;">
+            <form autocomplete="off" >
+                <section id = 'test2'>
+                    <h3 id = 'demo4'></h3>
+                    <h4 id = 'plus'></h4>
+                    <h3 id ='demo5'></h3>
+                </section>
+
+                    <section id = 'content' style = 'display: none' >
+                        <input type = 'text' id = 'quiz2'  />
+                        <input type = 'submit' id = 'score2'/>
+                    </section>
+                
+            </form>
+        </article>
+
+    </section>
+    
+   <script src="/scripts/script2.js"></script>
+    
+</body>
+</html>
