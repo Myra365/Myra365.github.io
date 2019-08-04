@@ -385,6 +385,11 @@ ul{
     /*Footer fix here*/
         
 }
+@media only screen and (max-width: 500px){
+    img{
+        width: 476px;
+    }
+}
 
 @media only screen and (max-width: 425px){
     /*    h1{
@@ -456,3 +461,4 @@ border: 10px solid black;
 margin-bottom: 30px;
 padding: 20px;
 }
+
