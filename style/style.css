@@ -315,6 +315,21 @@ clear: both;
     border: 3px solid #555;
 }
 
+/*For btn effects */
+.btnEffect{
+    font-size: 20px;
+    padding: 5px 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border: 3px solid #008CBA;
+    background-color: #ffffff;
+}
+
+.btnEffect:hover{
+    background-color: #008CBA;
+    color: white;
+}
+
 #score2{
     font-size: 20px;
     padding: 5px 20px;

@@ -27,7 +27,17 @@
 
         
         <article class = 'choose-box'>
-            <label>Pick a number between 2-12 </label><input type = 'text' id = 'drop' /> <button id = 'bnt'>Start</button>
+            
+            <form autocomplete="off">
+                <!--choose time goes below -->
+
+                <label>Pick a number between 2-12 </label>
+                <input type = 'text' id = 'drop' /> 
+            </br>
+                <input type = "submit" id = 'btn' class = 'btnEffect' value = "Start" />
+            
+            </form>
+            
             <br/>
             <span id = 'validate' style="display: none"> *Please pick a number between 2-10 </span>
         </article>
@@ -54,7 +64,7 @@
                 </section>
 
                     <section id = 'content' style = 'display: none' >
-                        <input type = 'text' id = 'quiz2'  />
+                        <input type = 'text' id = 'quiz2' autofocus = "autofocus"  />
                         <input type = 'submit' id = 'score2'/>
                     </section>
                 
