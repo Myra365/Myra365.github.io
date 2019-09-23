@@ -6,10 +6,13 @@ document.getElementById('btn').addEventListener('click', (e)=> {
     e.preventDefault();
 
     x = document.getElementById('drop').value;
+    let clock = document.querySelector('input[name="time"]:checked').value;
+    console.log(clock);
+
     //console.log(typeof(y));
 
     // validation if not correct
-    if(x < 2 || x > 12 || x == '' ){
+    if(x < 2 || x > 12 || x == '' || clock < 0 || clock > 4 || clock == ''){
         document.getElementById('validate').style.display = 'block';
     }
     // if correct proceed with game
@@ -103,6 +106,7 @@ document.getElementById('btn').addEventListener('click', (e)=> {
 
             //checks fi answer is correct
             function grader(userAns, sum){
+
                 counter++;
                 console.log('user: ' + userAns);
                 console.log('answer: ' + sum);
@@ -117,10 +121,11 @@ document.getElementById('btn').addEventListener('click', (e)=> {
                 
                 }
 
+                //number of problems in game
                 counter = counterCorrect + counterWrong;
                 if(counter === 100){ // number of problems
                     result = counterCorrect/100;
-                    result = result * 100;
+                    result = result * 100;               
                     clearInterval(stop);
                     document.getElementById('main-question-box').style.display = 'none';  
                     document.getElementById('result').style.display = 'block';
@@ -144,7 +149,7 @@ document.getElementById('btn').addEventListener('click', (e)=> {
             }
 
             // display and set time 
-            time = 60*4; // Time of Game
+            time = 60*clock; // Time of Game
             let stop =  setInterval(() => {
                 document.getElementById('myProgress').style.display = 'block';
                 document.getElementById('load').style.display = 'none';

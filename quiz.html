@@ -10,9 +10,9 @@
 
 </head>
 <body>
-
+    <!--Main box of website-->
     <section class = 'main-box' id = 'main-box'>
-
+        <!--NAV bar section -->
         <nav>
             <a href = "/index">Home</a>
             <a href = "#quiz">Quiz</a>
@@ -21,15 +21,31 @@
     
         </nav>
 
+        <!--Main header of page-->
         <header class = 'main-title' id = 'main-title'>
             <h1>Quiz</h1>
         </header>
 
-        
+        <!--Set of options box-->
         <article class = 'choose-box'>
             
             <form autocomplete="off">
                 <!--choose time goes below -->
+                <span>Set your time: </span>
+
+                <input type="radio" name="time" value="1" id = 'clock'> 1:00
+                <input type="radio" name="time" value="2" id = 'clock'> 2:00
+                <input type="radio" name="time" value="3" id = 'clock'> 3:00
+                <input type="radio" name="time" value="4" id = 'clock'> 4:00
+                
+                </br>
+                
+
+                <!--
+                <label>Set the time </label>
+                <input type = 'text' id = 'clock' class = 'options' autofocus = "autofocus"/> 
+                </br>
+                -->
 
                 <label>Pick a number between 2-12 </label>
                 <input type = 'text' id = 'drop' /> 
@@ -39,11 +55,11 @@
             </form>
             
             <br/>
-            <span id = 'validate' style="display: none"> *Please pick a number between 2-10 </span>
+            <span id = 'validate' style="display: none"> *Please pick a number between 2-10 or Set your time </span>
         </article>
 
 
-        
+        <!--Timer + progress bar-->
         <Article class = 'time-box'>
                 <h2 id = 'time'></h2>
 
@@ -54,7 +70,9 @@
                 <span id = 'load' style = "display: none;">Get Ready!</span>
         </Article>
 
+        <!--Question Box-->
         <span id = 'result' style="display:none;"></span>
+        
         <article id = 'main-question-box' style="display:none;">
             <form autocomplete="off" >
                 <section id = 'test2'>
@@ -62,7 +80,7 @@
                     <h4 id = 'plus'></h4>
                     <h3 id ='demo5'></h3>
                 </section>
-
+                <!--Score of box-->
                     <section id = 'content' style = 'display: none' >
                         <input type = 'text' id = 'quiz2' autofocus = "autofocus"  />
                         <input type = 'submit' id = 'score2'/>
